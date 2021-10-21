@@ -1,0 +1,386 @@
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.subtitle {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #DE3F3F;
+}
+
+.red-text {
+  color: #DE3F3F;
+}
+
+.hero {
+  background-color: #F3F9FF;
+}
+
+.hero-inner {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 125px 0 200px 0;
+}
+
+.hero-block {
+  position: relative;
+  width: 970px;
+  height: 330px;
+  background-color: #DE3F3F;
+  border-radius: 22px;
+  padding-top: 48px;
+  padding-left: 44px;
+}
+
+.hero-block__subtitle {
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero__title {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.hero-block__bottom {
+  position: absolute;
+  bottom: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.hero_city {
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  padding-left: 15px;
+}
+
+.hero__car {
+  position: absolute;
+  right: -300px;
+  bottom: -180px;
+}
+
+.hero__shadow-car {
+  position: absolute;
+  right: -300px;
+  bottom: -150px;
+}
+
+.about {
+  background-color: #DAE2ED;
+}
+
+.about-inner {
+  padding: 60px 0 100px 0;
+}
+
+.about__subtitle {
+  color: #000000;
+}
+
+.about-row {
+  margin-top: 60px;
+  display: flex;
+}
+
+.about__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 250px;
+  top: 40px;
+  width: 190px;
+  height: 3px;
+  background-color: #DE3F3F;
+}
+
+.about__number {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #DE3F3F;
+}
+
+.about__text {
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  width: 350px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.application {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/application.png") 50% 50%;
+  height: 270px;
+}
+
+.application-inner {
+  padding: 43px 0;
+}
+
+.application__title {
+  color: #ffffff;
+}
+
+.application-form {
+  display: flex;
+  margin-top: 40px;
+}
+
+.input {
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.input::placeholder {
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.application__input-name {
+  color: #ffffff;
+  border-bottom: 3px solid #DE3F3F;
+  width: 180px;
+  margin-right: 50px;
+}
+
+.application__input-phone {
+  border-bottom: 3px solid #DE3F3F;
+  width: 275px;
+  margin-right: 150px;
+}
+
+.btn {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  border-radius: 22px;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+}
+
+.application__btn {
+  background-color: #DE3F3F;
+  color: #ffffff;
+  padding: 12px 68px;
+}
+
+.privilege {
+  background-color: #F3F9FF;
+}
+
+.privilege-inner {
+  padding: 85px 0;
+}
+
+.privilege__title {
+  padding-bottom: 15px;
+}
+
+.privilege-row {
+  display: flex;
+}
+
+.privilege-item {
+  width: 100%;
+  display: flex;
+  padding-top: 35px;
+}
+
+.privilege-item__logo {
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.privilege-item__logo img {
+  width: 25px;
+}
+
+.privilege-item__text {
+  padding-top: 5px;
+}
+
+.privilege-item__text {
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.payment {
+  background-color: #E0EDF9;
+}
+
+.payment-inner {
+  text-align: center;
+  padding: 70px 0;
+}
+
+.payment-title {
+  padding-bottom: 65px;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: center;
+}
+
+.payment__btn {
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  padding: 25px;
+  background-color: #DE3F3F;
+}
+
+.payment__btn:not(:last-child) {
+  margin-right: 35px;
+}
+
+.payment__btn img {
+  width: 28px;
+  height: 18px;
+}
+
+.payment__text {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  padding-left: 15px;
+}
+
+.price {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/price-bg.png");
+  background-size: 100% 100%;
+}
+
+.price-inner {
+  padding: 75px 0;
+}
+
+.price__title {
+  color: #ffffff;
+}
+
+.price__subtitle {
+  color: #ffffff;
+  padding-top: 25px;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.price-table-outer {
+  width: 830px;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: 45px 90px 45px 75px;
+  background-color: #ffffff;
+  border-radius: 22px;
+}
+
+.price-table-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.price-table-row:last-child {
+  margin-bottom: 0;
+}
+
+.price-table__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-table__title {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #DE3F3F;
+}
+
+.price-table__subtitle {
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+}
+
+.price-table__coast {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.find {
+  background-color: #DE3F3F;
+}
+
+.find-inner {
+  display: flex;
+  padding: 55px 0;
+}
+
+.find-title {
+  color: #ffffff;
+  padding-right: 100px;
+}
+
+.find__input-name {
+  width: 180px;
+  border-bottom: 3px solid #ffffff;
+  margin-right: 45px;
+}
+
+.find__input-name::placeholder {
+  padding: 0;
+}
+
+.find__input-phone {
+  width: 275px;
+  border-bottom: 3px solid #ffffff;
+  margin-right: 35px;
+}
+
+.find__btn {
+  padding: 12px 25px;
+}

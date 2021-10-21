@@ -1,0 +1,113 @@
+/////////// <MIXIN>//////////////////
+@mixin font-regular {
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+}
+@mixin font-medium {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+}
+@mixin font-bold {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+
+}
+/////////// </MIXIN>//////////////////
+
+$main-color: #000000;
+$second-color: #ffffff;
+
+.header {
+    @include font-bold();
+    color: $main-color;
+    
+}
+.header-inner {
+    width: 1650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px;
+}
+.header__logo {
+    font-size: 24px;
+    line-height: 32px;
+ 
+}
+.header__menu {
+    margin-top: -10px;
+    margin-left: 400px;
+}
+.menu {
+    display: flex;
+    @include font-regular();
+}
+.menu__list {
+    list-style: none;
+}
+.menu__link {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+    padding-right: 40px;
+    color: $main-color;
+}
+.header__phone-link{
+    text-decoration: none;
+    color: $main-color;
+    font-size: 24px;
+ 
+}
+
+.footer {
+    @include font-bold();
+    color: $second-color;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: #262629;
+}
+.footer-inner {
+    width: 1100px;
+    height: 290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center
+}
+.footer__year {      
+    margin-right: 45px;
+}
+.footer__political {
+    display: block;
+    color: $second-color;
+    
+    line-height: 19px;
+    font-size: 14px;
+}
+.footer-rigth-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.footer-phone__link {        
+    display: block;
+    text-decoration: none;
+    color: $second-color;
+}
+.footer-adress {
+    width: 340px;
+    text-align: right;
+}
