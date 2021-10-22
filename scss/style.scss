@@ -16,7 +16,7 @@
 
 $main-color: #000000;
 $second-color: #ffffff;
-
+$font-size-m: 24px;
 .header {
     @include font-bold();
     color: $main-color;
@@ -27,15 +27,15 @@ $second-color: #ffffff;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 25px 15px;
 }
 .header__logo {
-    font-size: 24px;
+    font-size: $font-size-m;
     line-height: 32px;
  
 }
 .header__menu {
-    margin-top: -10px;
     margin-left: 400px;
 }
 .menu {
@@ -50,20 +50,27 @@ $second-color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     line-height: 27px;
-    padding-right: 40px;
+    padding: 0 20px;
     color: $main-color;
+    text-align: center;
+}
+.menu__link:hover {
+    transition: 0.2s ease-in;
+    opacity: 0.8;
+    border-right: 1px solid $main-color;
+    border-left: 1px solid $main-color;
 }
 .header__phone-link{
     text-decoration: none;
     color: $main-color;
-    font-size: 24px;
+    font-size: $font-size-m;
  
 }
 
 .footer {
     @include font-bold();
     color: $second-color;
-    font-size: 24px;
+    font-size: $font-size-m;
     line-height: 32px;
     background-color: #262629;
 }
