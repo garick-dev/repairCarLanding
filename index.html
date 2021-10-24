@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <title>Ремонт</title>
 </head>
 <body>
-    <header class="header"> 
-    <div class="header-inner">
+
+
+<header class="header">
+    <div class="header__inner">
         <div class="header__logo">РЕМОНТ КОРОБОК ПЕРЕДАЧ</div>
         <div class="header__menu">
             <ul class="menu">
@@ -23,368 +28,419 @@
             </ul>
         </div>
         <div class="header__phone">
-            <a class = "header__phone-link" href="#">+7 812 509 23 33</a>
+            <a class="header__link" href="#">+7 812 509 23 33</a>
         </div>
     </div>
 
-    </header>
-
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="hero-block">
-                <div class="hero-block__top">
-                <h3 class="subtitle hero-block__subtitle">РЕМОНТ АКПП, ВАРИАТОРОВ, МЕХАНИКИ ОТ 2000 р</h3>
-                <h1 class="hero__title">DSG / S-TRONIC / POWERSHIFT</h1>
-            </div>
-            <div class="hero-block__bottom">
-                <img src="./img/Vector.png" alt="" class="hero__img">
-                <span class="hero_city">В Санкт-Петербурге</span>
-            </div>
-            <img src="./img/car.png" alt="" class="hero__car">
-            <img src="./img/shadow-car.png" alt="" class="hero__shadow-car">
+</header>
+<section class="main">
+    <div class="hero">
+        <div class="hero__inner">
+            <div class="hero__block">
+                <div class="hero__top">
+                    <h1 class="subtitle subtitle_hero">РЕМОНТ АКПП, ВАРИАТОРОВ, МЕХАНИКИ ОТ 2000 р</h1>
+                    <h2 class="hero__title">DSG / S-TRONIC / POWERSHIFT</h2>
+                </div>
+                <div class="hero__bottom">
+                    <img src="./img/Vector.png" alt="" class="hero__img">
+                    <span class="hero__city">В Санкт-Петербурге</span>
+                </div>
+                <img src="./img/car.png" alt="" class="hero__car">
+                <img src="./img/shadow-car.png" alt="" class="hero__shadow-car">
             </div>
         </div>
-    </section>
-    <section class="about">
-      <div class="about-inner container">
-      <h2 class="title about__title">О НАШЕМ СЕРВИСЕ</h2>  
-      <h3 class="subtitle about__subtitle">Как мы работаем? <span class="span-highlight">6 простых шагов:</span></h3>  
-        <div class="about-row">
-            <div class="about__item">
-                <h2 class="about__number">1</h2>
-                <h2 class="about__text">На Вашей машине
-                    подозрительно
-                    работает трансмиссия</h2>
-            </div>
-            <div class="about__item">
-                <h2 class="about__number">2</h2>
-                <h2 class="about__text">Вы звоните нам
-                    или оставляете
-                    заявку на сайте</h2>
-            </div>
-            <div class="about__item">
-                <h2 class="about__number">3</h2>
-                <h2 class="about__text">Вызываете наш бесплатный эвакуатор или приезжаете своим ходом</h2>
-            </div>
-           
-        </div>
-        <div class="about-row">
-            <div class="about__item">
-                <h2 class="about__number">6</h2>
-                <h2 class="about__text">Приезжаете
-                    за автомобилем
-                   и пользуетесь гарантией</h2>
-            </div>
-            <div class="about__item">
-                <h2 class="about__number">5</h2>
-                <h2 class="about__text">Согласовываете перечень работ,
-                    сроки и стоимость</h2>
-            </div>
-            <div class="about__item">
-                <h2 class="about__number">4</h2>
-                <h2 class="about__text">Общаетесь с мастером
-                    в процессе дефектовки и диагностики</h2>
-            </div>
-           
-        </div>
-
     </div>
-    </section>
-    <section class="application">
-        <div class="application-inner container">
-            <h2 class="title application__title">
+    <article class="about">
+        <div class="about__inner container">
+            <h2 class="title title_about">О НАШЕМ СЕРВИСЕ</h2>
+            <h3 class="subtitle subtitle_about">Как мы работаем? <span class="span-highlight">6 простых шагов:</span>
+            </h3>
+            <div class="about__row">
+                <div class="about__item">
+                    <h2 class="about__number">1</h2>
+                    <h2 class="about__text">На Вашей машине
+                        подозрительно
+                        работает трансмиссия</h2>
+                </div>
+                <div class="about__item">
+                    <h2 class="about__number">2</h2>
+                    <h2 class="about__text">Вы звоните нам
+                        или оставляете
+                        заявку на сайте</h2>
+                </div>
+                <div class="about__item">
+                    <h2 class="about__number">3</h2>
+                    <h2 class="about__text">Вызываете наш бесплатный эвакуатор или приезжаете своим ходом</h2>
+                </div>
+
+            </div>
+            <div class="about__row">
+                <div class="about__item">
+                    <h2 class="about__number">6</h2>
+                    <h2 class="about__text">Приезжаете
+                        за автомобилем
+                        и пользуетесь гарантией</h2>
+                </div>
+                <div class="about__item">
+                    <h2 class="about__number">5</h2>
+                    <h2 class="about__text">Согласовываете перечень работ,
+                        сроки и стоимость</h2>
+                </div>
+                <div class="about__item">
+                    <h2 class="about__number">4</h2>
+                    <h2 class="about__text">Общаетесь с мастером
+                        в процессе дефектовки и диагностики</h2>
+                </div>
+
+            </div>
+        </div>
+    </article>
+    <article class="application">
+        <div class="application__inner container">
+            <h2 class="title title_application">
                 ОСТАВЬ ЗАЯВКУ И ПОЛУЧИ СКИДКУ
             </h2>
-            <form class="application-form" action="">
-                    <input class="input application__input-name" type="text" name="" id="" placeholder="Имя">
-                    <input class="input application__input-phone" type="text" name="" id="" placeholder="Ваш телефон">
-                    <button class="btn application__btn" type="submit">Получить скидку</button>
-            </form>       
+            <form class="application__form">
+                <input class="input application__name" type="text" placeholder="Имя">
+                <input class="input application__phone" type="text" placeholder="Ваш телефон">
+                <button class="btn application__btn" type="submit">Получить скидку</button>
+            </form>
 
         </div>
-    </section>
-    <section class="privilege">
-        <div class="privilege-inner container">
-            <h2 class="title privilege__title">РЕМОНТ КОРОБОК ПЕРЕДАЧ</h2>
-            <h3 class="subtitle privilege__subtitle">Наши преимущества</h2>
-            
-                    <div class="privilege-row">
-                    <div class="privilege-item">
-                        <div class="privilege-item__logo">
-                            <img src="./img/check.png" alt="">
-                        </div>
-                        <div class="privilege-item__content">   
-                        <h3 class="subtitle privilege__subtitle">Гарантия</h3>
-                        <p class="privilege-item__text">Гарантия работы до 3-х лет или 90 000 пробега.</p>
+    </article>
+    <article class="privilege">
+        <div class="privilege__inner container">
+            <h2 class="title title_privilege">РЕМОНТ КОРОБОК ПЕРЕДАЧ</h2>
+            <h3 class="subtitle">Наши преимущества</h3>
+            <div class="privilege__row">
+                <div class="privilege__item">
+                    <div class="privilege__logo">
+                        <img src="./img/check.png" alt="">
                     </div>
+                    <div class="privilege__content">
+                        <h3 class="subtitle subtitle_privilege">Гарантия</h3>
+                        <p class="privilege__text">Гарантия работы до 3-х лет или 90 000 пробега.</p>
                     </div>
-                    <div class="privilege-item">
-                        <div class="privilege-item__logo">
-                            <img src="./img/check.png" alt="">
-                        </div>
-                        <div class="privilege-item__content">   
-                        <h3 class="subtitle privilege__subtitle">Ремонт группы VAG, Ford</h3>
-                        <p class="privilege-item__text">Ремонт DSG, Powershift, S-tronic на автомобилях группы VAG</p>
-                    </div>
-                    </div>
-                
-                  
                 </div>
-                    <div class="privilege-row">
-
-                        <div class="privilege-item">
-                            <div class="privilege-item__logo">
-                                <img src="./img/check.png" alt="">
-                            </div>
-                            <div class="privilege-item__content">   
-                            <h3 class="subtitle privilege__subtitle">Низкие цены</h3>
-                            <p class="privilege-item__text">Ремонт DSG 6, DSG 7, PDK, Powershift, S-tronic в Санкт-Петербурге
-                                по низким ценам в специализированном СТО.</p>
-                        </div>
-                        </div>
-
-
-                 
-                    <div class="privilege-item">
-                        <div class="privilege-item__logo">
-                            <img src="./img/check.png" alt="">
-                        </div>
-                        <div class="privilege-item__content">   
-                        <h3 class="subtitle privilege__subtitle">Опыт механиков</h3>
-                        <p class="privilege-item__text">Опыт механиков по ремонтным работам от 5-и лет.</p>
+                <div class="privilege__item">
+                    <div class="privilege__logo">
+                        <img src="./img/check.png" alt="">
                     </div>
+                    <div class="privilege__content">
+                        <h3 class="subtitle subtitle_privilege">Ремонт группы VAG, Ford</h3>
+                        <p class="privilege__text">Ремонт DSG, Powershift, S-tronic на автомобилях группы VAG</p>
                     </div>
-                  
                 </div>
-            
-        </div>
-    </section>
-    <section class="payment">
-        <div class="payment-inner container">
-            <h2 class="title payment-title">ДЛЯ ВАШЕГО УДОБСТВА В НАШЕМ САЛОНЕ</h2>
-            <div class="payment-row">
-            <div class="payment__btn">
-                <img src="./img/check-white.png" alt="">
-                <span class="payment__text">Оплата в рассрочку</span>
+
+
             </div>
-            <div class="payment__btn">
-                <img src="./img/check-white.png" alt="">
-                <span class="payment__text">Оплата картой</span>
-            </div>
-            <div class="payment__btn">
-                <img src="./img/check-white.png" alt="">
-                <span class="payment__text">   Оплата наличными</span>
+            <div class="privilege__row">
+
+                <div class="privilege__item">
+                    <div class="privilege__logo">
+                        <img src="./img/check.png" alt="">
+                    </div>
+                    <div class="privilege__content">
+                        <h3 class="subtitle subtitle_privilege">Низкие цены</h3>
+                        <p class="privilege__text">Ремонт DSG 6, DSG 7, PDK, Powershift, S-tronic в Санкт-Петербурге
+                            по низким ценам в специализированном СТО.</p>
+                    </div>
+                </div>
+
+
+                <div class="privilege__item">
+                    <div class="privilege__logo">
+                        <img src="./img/check.png" alt="">
+                    </div>
+                    <div class="privilege__content">
+                        <h3 class="subtitle subtitle_privilege">Опыт механиков</h3>
+                        <p class="privilege__text">Опыт механиков по ремонтным работам от 5-и лет.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </article>
+    <article class="payment">
+        <div class="payment__inner container">
+            <h2 class="title title_payment">ДЛЯ ВАШЕГО УДОБСТВА В НАШЕМ САЛОНЕ</h2>
+            <div class="payment__row">
+                <div class="payment__btn">
+                    <img src="./img/check-white.png" alt="">
+                    <span class="payment__text">Оплата в рассрочку</span>
+                </div>
+                <div class="payment__btn">
+                    <img src="./img/check-white.png" alt="">
+                    <span class="payment__text">Оплата картой</span>
+                </div>
+                <div class="payment__btn">
+                    <img src="./img/check-white.png" alt="">
+                    <span class="payment__text">   Оплата наличными</span>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="price">
-        <div class="price-inner container">
-            <h2 class="title price__title">ЦЕНЫ НА РЕМОНТ <span class="span-highlight">DSG</span> И  <span class="span-highlight">POWERSHIFT</span></h2>
-            <h3 class="price__subtitle">Звоните и получите профессиональную консультацию от специалистов по ремонту автоматических и полуавтоматических коробок передач.</h3>
-            <div class="price-table-outer">
-                <div class="price-table-inner">
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Адаптация коробки передач DSG S-Tronic Powershift</span>
-                            <span class="price-table__subtitle">
+    </article>
+    <article class="price">
+        <div class="price__inner container">
+            <h2 class="title title_price">ЦЕНЫ НА РЕМОНТ <span class="span-highlight">DSG</span> И <span
+                    class="span-highlight">POWERSHIFT</span></h2>
+            <h3 class="subtitle subtitle_price">Звоните и получите профессиональную консультацию от специалистов по
+                ремонту автоматических и полуавтоматических коробок передач.</h3>
+            <div class="price__table">
+
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Адаптация коробки передач DSG S-Tronic Powershift</span>
+                        <span class="price__subtitle">
                                 (бесплатно при записи на ремонт)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            БЕСПЛАТНО
-                        </div>
                     </div>
-                   
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Диагностика коробки передач DSG S-Tronic Powershift</span>
-                            <span class="price-table__subtitle">
+                    <div class="price__coast">
+                        БЕСПЛАТНО
+                    </div>
+                </div>
+
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Диагностика коробки передач DSG S-Tronic Powershift</span>
+                        <span class="price__subtitle">
                                 (бесплатно при записи на ремонт)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            БЕСПЛАТНО
-                        </div>
                     </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Ремонт АКПП DSG S-Tronic Powershift</span>
-                        
-                        </div>
-                        <div class="price-table__coast">
-                            от 15000 ₽
-                        </div>
+                    <div class="price__coast">
+                        БЕСПЛАТНО
                     </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Замена сцепления DSG 6</span>
-                            <span class="price-table__subtitle">
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Ремонт АКПП DSG S-Tronic Powershift</span>
+
+                    </div>
+                    <div class="price__coast">
+                        от 15000 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Замена сцепления DSG 6</span>
+                        <span class="price__subtitle">
                                 (под ключ — запчасти + установка + адаптация)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            32900 ₽
-                        </div>
                     </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Замена сцепления DSG 7</span>
-                            <span class="price-table__subtitle">
+                    <div class="price__coast">
+                        32900 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Замена сцепления DSG 7</span>
+                        <span class="price__subtitle">
                                 (под ключ — запчасти + установка + адаптация)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            от 23990 ₽
-                        </div>
                     </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Замена сцепления S Tronic 0B5</span>
-                            <span class="price-table__subtitle">
+                    <div class="price__coast">
+                        от 23990 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Замена сцепления S Tronic 0B5</span>
+                        <span class="price__subtitle">
                                 (под ключ — запчасти + установка + адаптация)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            32900 ₽
-                        </div>
                     </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Замена сцепления Powershift DCT250</span>
-                            <span class="price-table__subtitle">
+                    <div class="price__coast">
+                        32900 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Замена сцепления Powershift DCT250</span>
+                        <span class="price__subtitle">
                                 (под ключ — запчасти + установка + адаптация)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            от 34900 ₽
-                        </div>
                     </div>
-                   
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Замена сцепления Powershift DCT450</span>
-                            <span class="price-table__subtitle">
+                    <div class="price__coast">
+                        от 34900 ₽
+                    </div>
+                </div>
+
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Замена сцепления Powershift DCT450</span>
+                        <span class="price__subtitle">
                                 (под ключ — запчасти + установка + адаптация)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            от 39000 ₽
-                        </div>
                     </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Замена маховика АКПП DSG S-Tronic Powershift</span>
-                            <span class="price-table__subtitle">
+                    <div class="price__coast">
+                        от 39000 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Замена маховика АКПП DSG S-Tronic Powershift</span>
+                        <span class="price__subtitle">
                                 (запчасти + работа)</span>
-                        </div>
-                        <div class="price-table__coast">
-                            от 14900 ₽
-                        </div>
                     </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Ремонт мехатроника DQ200</span>
-                            
-                        </div>
-                        <div class="price-table__coast">
-                            от 14900 ₽
-                        </div>
-                    </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Ремонт мехатроника DQ500</span>
-                            
-                        </div>
-                        <div class="price-table__coast">
-                            от 14900 ₽
-                        </div>
-                    </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Ремонт мехатроника DL501 0B5</span>
-                            
-                        </div>
-                        <div class="price-table__coast">
-                            от 14900 ₽
-                        </div>
-                    </div>
-                    <div class="price-table-row">
-                        <div class="price-table__info">
-                            <span class="price-table__title">Ремонт мехатроника DCT450</span>
-                            
-                        </div>
-                        <div class="price-table__coast">
-                            от 14900 ₽
-                        </div>
+                    <div class="price__coast">
+                        от 14900 ₽
                     </div>
                 </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Ремонт мехатроника DQ200</span>
+
+                    </div>
+                    <div class="price__coast">
+                        от 14900 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Ремонт мехатроника DQ500</span>
+
+                    </div>
+                    <div class="price__coast">
+                        от 14900 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Ремонт мехатроника DL501 0B5</span>
+
+                    </div>
+                    <div class="price__coast">
+                        от 14900 ₽
+                    </div>
+                </div>
+                <div class="price__row">
+                    <div class="price__info">
+                        <span class="price__title">Ремонт мехатроника DCT450</span>
+
+                    </div>
+                    <div class="price__coast">
+                        от 14900 ₽
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
+    </article>
     <section class="reviews">
-        <div class="reviews-content">
-        <h2 class="title reviews__title">
-            ОТЗЫВЫ КЛИЕНТОВ
-        </h2>
-        <div class="slider">
-            <div class="slider__item">
-                <p class="slider__title">Андрей</p>
-                <p class="slider__text">Хорошее место по ремонту Ауди. Стала дергаться коробка при снижении скорости. Везде приговаривали замену сцепления, а в итоге грамотная диагностика и умелые руки выявили и исправили поломкув мехатронике. Записывался заранее т.к. сам из Петрозаводска. </p>
+        <div class="reviews__content">
+            <h2 class="title title_reviews">
+                ОТЗЫВЫ КЛИЕНТОВ
+            </h2>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        <div class="glide__container">
+                        <div class="glide__item">
+                            <p class="glide__title">Андрей</p>
+                            <p class="glide__text">Хорошее место по ремонту Ауди. Стала дергаться коробка при снижении
+                                скорости. Везде приговаривали замену сцепления, а в итоге грамотная диагностика и умелые руки
+                                выявили и исправили поломкув мехатронике. Записывался заранее т.к. сам из Петрозаводска. </p>
+                        </div>
+                        <div class="glide__item">
+                            <p class="glide__title">Роман</p>
+                            <p class="glide__text">Отличная автомастерская. Благодарю мастера и по совместительству менеджера
+                                Андрея и его команду профессиональных автомехаников за помощь и проделанную работу. </p>
+                        </div>
+                        <div class="glide__item">
+                            <p class="glide__title">Анастасия</p>
+                            <p class="glide__text">Отличный сервис с хорошими ценами! В моем случае замена сцепления и масла
+                                коробки передач, также прочистили дроссельную заслонку и поменяли свечи. В общем отличная
+                                мастерская, очень рекомендую. </p>
+                        </div>
+                        </div>
+                        <div class="glide__container">
+                            <div class="glide__item">
+                                <p class="glide__title">Андрей</p>
+                                <p class="glide__text">Хорошее место по ремонту Ауди. Стала дергаться коробка при снижении
+                                    скорости. Везде приговаривали замену сцепления, а в итоге грамотная диагностика и умелые руки
+                                    выявили и исправили поломкув мехатронике. Записывался заранее т.к. сам из Петрозаводска. </p>
+                            </div>
+                            <div class="glide__item">
+                                <p class="glide__title">Роман</p>
+                                <p class="glide__text">Отличная автомастерская. Благодарю мастера и по совместительству менеджера
+                                    Андрея и его команду профессиональных автомехаников за помощь и проделанную работу. </p>
+                            </div>
+                            <div class="glide__item">
+                                <p class="glide__title">Анастасия</p>
+                                <p class="glide__text">Отличный сервис с хорошими ценами! В моем случае замена сцепления и масла
+                                    коробки передач, также прочистили дроссельную заслонку и поменяли свечи. В общем отличная
+                                    мастерская, очень рекомендую. </p>
+                            </div>
+                        </div>
+                        <div class="glide__container">
+                            <div class="glide__item">
+                                <p class="glide__title">Андрей</p>
+                                <p class="glide__text">Хорошее место по ремонту Ауди. Стала дергаться коробка при снижении
+                                    скорости. Везде приговаривали замену сцепления, а в итоге грамотная диагностика и умелые руки
+                                    выявили и исправили поломкув мехатронике. Записывался заранее т.к. сам из Петрозаводска. </p>
+                            </div>
+                            <div class="glide__item">
+                                <p class="glide__title">Роман</p>
+                                <p class="glide__text">Отличная автомастерская. Благодарю мастера и по совместительству менеджера
+                                    Андрея и его команду профессиональных автомехаников за помощь и проделанную работу. </p>
+                            </div>
+                            <div class="glide__item">
+                                <p class="glide__title">Анастасия</p>
+                                <p class="glide__text">Отличный сервис с хорошими ценами! В моем случае замена сцепления и масла
+                                    коробки передач, также прочистили дроссельную заслонку и поменяли свечи. В общем отличная
+                                    мастерская, очень рекомендую. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                </div>
             </div>
-            <div class="slider__item">
-                <p class="slider__title">Роман</p>
-                <p class="slider__text">Отличная автомастерская. Благодарю мастера и по совместительству менеджера Андрея и его команду профессиональных автомехаников за помощь и проделанную работу. </p>
-            </div>
-            <div class="slider__item">
-                <p class="slider__title">Анастасия</p>
-                <p class="slider__text">Отличный сервис с хорошими ценами! В моем случае замена сцепления и масла коробки передач, также прочистили дроссельную заслонку и поменяли свечи. В общем отличная мастерская, очень рекомендую. </p>
-            </div>
+
         </div>
-   
-      
-    
-    </div>
-    <div class="reviews-background"></div>
+        <div class="reviews__background"></div>
 
-</div>
     </section>
-
-    <section class="find">
-        <div class="find-inner container">
-            <h2 class="title find-title">КАК НАС НАЙТИ</h2>
-            <form class="find-form">
-                <input class="input find__input-name" type="text" name="" id="" placeholder="Имя">
-                <input class="input find__input-phone" type="text" name="" id="" placeholder="Ваш телефон">
+    <article class="find">
+        <div class="find__inner container">
+            <h2 class="title title_find">КАК НАС НАЙТИ</h2>
+            <form class="find__form">
+                <input class="input find__name" type="text" name="" placeholder="Имя">
+                <input class="input find__phone" type="text" name="" placeholder="Ваш телефон">
                 <button class="btn find__btn" type="submit">Вперед</button>
             </form>
         </div>
-    </section>
-    <section class="map">
+    </article>
+    <article class="map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5638.48374936042!2d38.97855890668111!3d45.04031333968328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd32c03282423b46d!2z0JrQvtCy0L7RgNC60LjQvdCz!5e0!3m2!1sru!2sru!4v1605452299089!5m2!1sru!2sru"
-          width="600"
-          height="600"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5638.48374936042!2d38.97855890668111!3d45.04031333968328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd32c03282423b46d!2z0JrQvtCy0L7RgNC60LjQvdCz!5e0!3m2!1sru!2sru!4v1605452299089!5m2!1sru!2sru"
+                width="600"
+                height="600"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
         ></iframe>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-left-block">
-                <p class="footer__logo">
-                    РЕМОНТ КОРОБОК ПЕРЕДАЧ
-                </p>
-                <div class="footer-info">
-                    <p class="footer__year">2019-2021</p>
-                    <a class="footer__political" href="#">Политика конфиденциальности</a>
-                </div>
-            </div>
-            <div class="footer-rigth-block">
-                <div class="footer-phone">
-                    <a class="footer-phone__link" href="#">+7 812 509 23 33</a>
-                </div>
-                <p class="footer-adress">ул. Хрустальная, 31 литер о
-                    Санкт-Петербург</p>
+    </article>
+</section>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__left-side">
+            <p class="footer__logo">
+                РЕМОНТ КОРОБОК ПЕРЕДАЧ
+            </p>
+            <div class="footer__info">
+                <p class="footer__year">2019-2021</p>
+                <a class="footer__political" href="#">Политика конфиденциальности</a>
             </div>
         </div>
-    </footer>
+        <div class="footer__right-side">
+            <div class="footer__phone">
+                <a class="footer__link" href="#">+7 812 509 23 33</a>
+            </div>
+            <p class="footer__address">ул. Хрустальная, 31 литер о
+                Санкт-Петербург</p>
+        </div>
+    </div>
+</footer>
+<script src="./js/main.js"></script>
 </body>
 </html>
