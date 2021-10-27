@@ -4,7 +4,7 @@ const glide = new Glide('.glide', {
     focusAt: 'center',
     breakpoints: {
         800: {
-            perView: 2
+            perView: 1
         },
         480: {
             perView: 1

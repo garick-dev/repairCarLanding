@@ -4,6 +4,7 @@
     padding: 0 15px;
 }
 
+
 .title{
     font-family: "Exo", sans-serif;
     font-weight: 700;
@@ -63,25 +64,14 @@
     padding: 125px 15px 200px 15px;
 }
 
-@media (max-width: 1250px) {
-    .hero__inner {
-        padding: calc(25px + (125 - 25) * ((100vw - 320px) / (1250 - 320))) 10px 200px 10px;
-    }
-}
+
 .hero__block {
     position: relative;
-    width: 970px;
-    /* height: 330px; */
+    max-width: 970px;
     background-color: #DE3F3F;
     border-radius: 22px;
     padding-top: 48px;
     padding-left: 44px;
-}
-@media (max-width: 1250px) {
-    .hero__block {
-        width: auto;
-        padding: calc(24px + (48 - 12) * ((100vw - 320px) / (1250 - 320))) calc(20px + (44 - 10) * ((100vw - 320px) / (1250 - 320)));
-    }
 }
 
 .subtitle_hero {
@@ -116,37 +106,12 @@
     right: -300px;
     bottom: -180px;
 }
-@media (max-width: 1250px) {
-    .hero__bottom {
-        padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1250 - 320)));
-        padding-bottom: 0;
 
-    }
-    .hero__bottom img {
-        width: calc(15px + (28 - 15) * ((100vw - 320px) / (1250 - 320)));
-    }
-    .hero__car  {
-       width:  calc(500px + (868 - 500) * ((100vw - 640px) / (1250 - 640)));
-       right: 0;
-    }
-}
-@media (max-width: 640px) {
-    .hero__car  {
-       bottom: -165px;
-    }
-}
 
 .hero__shadow-car {
     position: absolute;
     right: -300px;
     bottom: -150px;
-}
-
-@media (max-width: 1250px) {
-    .hero__shadow-car  {
-       width:  calc(500px + (868 - 500) * ((100vw - 640px) / (1250 - 640)));
-       right: 0;
-    }
 }
 
 
@@ -221,13 +186,6 @@
     display: flex;
     margin-top: 40px;
 }
-@media (max-width: 680px) {
-    .application__form {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 
 
 .application__name {
@@ -236,42 +194,19 @@
     width: 180px;
     margin-right: 50px;
 }
-@media (max-width: 680px) {
-    .application__name {
-        width: 80%;
-        margin: 0;
-    }
-}
 
 .application__phone {
     border-bottom: 3px solid #DE3F3F;
     width: 275px;
     margin-right: 150px;
 }
-@media (max-width: 890px) {
-    .application__phone {
-        flex-direction: column;
-        margin-right: 50px;
-    }
-}
-@media (max-width: 680px) {
-    .application__phone {
-        width: 80%;
-       margin: 10px 0;
-    }
-}
+
 
 .application__btn {
     background-color: #DE3F3F;
     color: #ffffff;
     padding: 12px 68px;
 }
-@media (max-width: 1000px) {
-    .application__btn {
-        padding: 12px 38px;
-    }
-}
-
 
 .application__btn:hover {
     box-shadow: 0 0 20px #DE3F3F;
@@ -293,11 +228,7 @@
 .privilege__row {
     display: flex;
 }
-@media (max-width: 640px) {
-    .privilege__row {
-        flex-direction: column;
-    }
-}
+
 .privilege__item {
     width: 100%;
     display: flex;
@@ -312,11 +243,7 @@
 .privilege__logo img {
     width: 25px;
 }
-@media (max-width: 640px) {
-    .privilege__logo img {
-       width: 16px;
-    }
-}
+
 
 .privilege__text {
     padding-top: 5px;
@@ -347,11 +274,7 @@
     display: flex;
     justify-content: center;
 }
-@media (max-width: 640px) {
-    .payment__row {
-        flex-direction: column;
-    }
-}
+
 
 .payment__btn {
     display: flex;
@@ -364,23 +287,14 @@
 .payment__btn:not(:last-child) {
     margin-right: 35px;
 }
-@media (max-width: 640px) {
-    .payment__btn:not(:last-child) {
-       margin: 0;
-       margin-bottom: 10px;
-    }
-}
+
+
 
 .payment__btn img {
     width: 28px;
     height: 18px;
 }
-@media (max-width: 640px) {
-    .payment__btn img {
-        width: 18px;
-        height: 10px;
-    }
-}
+
 
 .payment__text {
     font-family: "Exo", sans-serif;
@@ -422,23 +336,15 @@
     background-color: #ffffff;
     border-radius: 22px;
 }
-@media (max-width: 1070px) {
-    .price__table {
-        width: auto;
-        padding: 20px calc(20px + (45 - 20) * ((100vw - 320px) / (1070 - 320)));
-    }
-}
+
+
 
 .price__row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
 }
-@media (max-width: 1070px) {
-    .price__row {
-        align-items: center;
-    }
-}
+
 
 .price__row:last-child {
     margin-bottom: 0;
@@ -447,11 +353,6 @@
 .price__info {
     display: flex;
     flex-direction: column;
-}
-@media (max-width: 1070px) {
-    .price__info {
-        margin-right: 10px;
-    }
 }
 
 .price__title {
@@ -481,35 +382,40 @@
     background-color: #F3F9FF;
     display: flex;
 }
+
+
 .reviews__inner {
-    max-width: 1070px;
-    padding: 95px 0 95px 300px;
-}
+    width: 710px;
+    margin-top: 100px;
+    margin-left: calc(100px + (415 - 100) * ((100vw - 890px) / (1920 - 890)));
+} 
+
+
 .reviews__content {
 
     display: flex;
     flex-direction: column;
-    /* padding: 95px 0 95px 300px; */
+    position: relative; 
+    
+}
+.title_reviews {
+    padding-left: 25px;
 }
 
-.reviews__title {
-    margin-left: 25px;
-}
 
+
+
+.glide {
+    margin-top: 55px;
+   
+}
+.glide__container {
+    overflow: hidden;
+}
 
 .glide__slides {
     display: flex;
 
-}
-
-.glide__slide img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.glide {
-    margin-top: 55px;
-    position: relative;
 }
 
 .glide__track {
@@ -530,14 +436,11 @@
     background-repeat: no-repeat;
 }
 
-.glide__arrow--left:hover::before {
-    cursor: pointer;
-}
 .glide__arrow--right {
     display: block;
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 25px;
     width: 50px;
     height: 50px;
     background-color: #DE3F3F;
@@ -546,14 +449,14 @@
     background-image: url("../img/arrow-right.png");
     background-position: 55% 50%;
     background-repeat: no-repeat;
+    z-index: 100;
 }
-
-.glide__arrow--rigth:hover::after {
+.glide__arrow:hover {
     cursor: pointer;
-}
+}   
 
 .glide__item {
-    width: 585px;
+    width: 515px;
     background-color: #ffffff;
     border-radius: 22px;
     padding: 15px 45px 15px 30px;
@@ -582,7 +485,7 @@
 
 .reviews__background {
     margin-left: auto;
-    width: 805px;
+    width: 100%;
     height: 860px;
     clip-path: polygon(20% 0, 100% 0%, 100% 100%, 4% 100%);
     background: url("../img/reviews-bg.png") no-repeat;
@@ -597,38 +500,20 @@
     padding-top: 55px;
     padding-bottom: 55px;
 }
-@media (max-width: 1070px) {
-    .find__inner{
-        flex-direction: column;
-    }
-}
 
 .title_find {
     color: #ffffff;
     padding-right: 100px;
 }
 
-@media (max-width: 720px) {
-    .find__form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
-    }
-}
+
 
 .find__name {
     width: 180px;
     border-bottom: 3px solid #ffffff;
     margin-right: 45px;
 }
-@media (max-width: 720px) {
-    .find__name{
-       width: 80%;
-       margin: 0;
-    
-    }
-}
+
 
 .find__name::placeholder {
     padding: 0;
@@ -639,25 +524,13 @@
     border-bottom: 3px solid #ffffff;
     margin-right: 35px;
 }
-@media (max-width: 720px) {
-    .find__phone{
-       width: 80%;
-       margin: 10px 0;       
-    }
-    .find__phone::placeholder{
-        padding: 0;
-    }
-}
+
 
 
 .find__btn {
     padding: 12px 40px;
 }
-@media (max-width: 720px) {
-    .find__btn {
-        padding: 7px 40px;
-    }
-}
+
 
 .find__btn:hover {
     box-shadow: 0 0 20px #ffffff;
@@ -665,12 +538,6 @@
 
 .map iframe {
     width: 100%;
-}
-
-@media (max-width: 1100px) {
-    .map iframe {
-        height: calc(200px + (600 - 200) * ((100vw - 320px) / (1100 - 320)));
-    }
 }
 
 .application_popup {
@@ -685,3 +552,192 @@
 .application__form_popup input {
     color: #000000
 }
+
+
+
+@media (max-width: 1250px) {
+    .hero__inner {
+        padding: calc(25px + (125 - 25) * ((100vw - 320px) / (1250 - 320))) 10px 200px 10px;
+    }
+    .hero__block {
+        width: auto;
+        padding: calc(24px + (48 - 12) * ((100vw - 320px) / (1250 - 320))) calc(20px + (44 - 10) * ((100vw - 320px) / (1250 - 320)));
+    }
+    .hero__bottom {
+        padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1250 - 320)));
+        padding-bottom: 0;
+    }
+    .hero__bottom img {
+        width: calc(15px + (28 - 15) * ((100vw - 320px) / (1250 - 320)));
+    }
+    .hero__car  {
+       width:  calc(500px + (868 - 500) * ((100vw - 640px) / (1250 - 640)));
+       right: 0;
+    }
+    .hero__shadow-car  {
+        width:  calc(500px + (868 - 500) * ((100vw - 640px) / (1250 - 640)));
+        right: 0;
+     }
+}
+
+@media (max-width: 1070px) {
+    .application__btn {
+        padding: 12px 38px;
+    }
+    .payment__inner {
+        padding-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1070 - 320)));
+        padding-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1070 - 320)));
+    }
+    .title_payment {
+        padding-bottom: calc(20px + (65 - 20) * ((100vw - 320px) / (1070 - 320)));
+    }
+    .price__inner {
+        padding-top: calc(20px + (75 - 20) * ((100vw - 320px) / (1070 - 320)));
+        padding-bottom: calc(20px + (75 - 20) * ((100vw - 320px) / (1070 - 320)));
+    }
+    .price__table {
+        width: auto;
+        padding: 20px calc(20px + (45 - 20) * ((100vw - 320px) / (1070 - 320)));
+    }
+    .price__row {
+        align-items: center;
+    }
+    .price__info {
+        margin-right: 10px;
+    }
+   
+
+    .find__inner{
+        flex-direction: column;
+    }
+  
+    .map iframe {
+        height: calc(200px + (600 - 200) * ((100vw - 320px) / (1100 - 320)));
+    }
+}
+@media (max-width: 890px) {
+    .application__phone {
+        flex-direction: column;
+        margin-right: 50px;
+    }
+
+    .reviews__background {
+        display: none;
+    }  
+    .reviews__inner {
+        width: 90%;
+        margin: calc(20px + (100 - 20) * ((100vw - 320px) / (890 - 320))) auto;
+        padding: 0 15px;
+   
+    } 
+    .glide { 
+        margin-top: calc(20px + (55 - 20) * ((100vw - 320px) / (890 - 320)));;
+    }
+
+    .glide__item {
+        width: 90%;
+        padding: calc(10px + (15 - 10) * ((100vw - 320px) / (890 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (890 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (890 - 320))) calc(15px + (25 - 15) * ((100vw - 320px) / (890 - 320)));
+        margin-bottom: calc(15px + (25 - 15) * ((100vw - 320px) / (890 - 320)));;
+    }
+    .glide__title {
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (890 - 320)));
+        line-height: calc(18px + (32 - 18) * ((100vw - 320px) / (890 - 320)));
+    }
+    .glide__text {
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (890 - 320)));
+        line-height: calc(16px + (22 - 16) * ((100vw - 320px) / (890 - 320)));
+    }
+    .glide__arrow {
+        display: none;
+    }
+}
+@media (max-width: 720px) {
+ 
+      .find__inner {
+        padding-top: calc(20px + (55 - 20) * ((100vw - 320px) / (720 - 320))); 
+        padding-bottom: calc(20px + (55 - 20) * ((100vw - 320px) / (720 - 320))); 
+    }
+    .find__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .find__name{
+        width: 80%;
+        margin: 0;
+     }
+     .find__phone{
+         width: 80%;
+         margin: 10px 0;       
+      }
+      .find__phone::placeholder{
+          padding: 0;
+      }
+      .find__btn {
+          margin-top: 10px;
+          padding: 7px calc(100px + (250 - 100) * ((100vw - 320px) / (720 - 320))); 
+        };
+      }
+
+@media (max-width: 680px) {
+    .application {
+        height: auto;
+    }
+    .application__inner {
+        padding-top: calc(20px + (43 - 20) * ((100vw - 320px) / (680 - 320)));;
+        padding-bottom: calc(20px + (43 - 20) * ((100vw - 320px) / (680 - 320)));
+    }
+    .application__form {
+        flex-direction: column;
+        align-items: center;
+        margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (680 - 320)));
+    }
+    .application__name {
+        width: 80%;
+        margin: 0;
+    }
+    .application__phone {
+        width: 80%;
+       margin: 10px 0;
+    }
+    .application__btn {
+        padding: 12px calc(70px + (205 - 70) * ((100vw - 320px) / (680 - 320)));
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero__car  {
+       bottom: -165px;
+    }
+      .privilege__inner {
+        padding-top: calc(20px + (85 - 20) * ((100vw - 320px) / (640 - 320)));;
+        padding-bottom: calc(20px + (85 - 20) * ((100vw - 320px) / (640 - 320)));;
+    }
+    .privilege__item {
+        padding-top: calc(10px + (35 - 10) * ((100vw - 320px) / (640 - 320)));;
+    }
+    .privilege__row {
+        flex-direction: column;
+    }
+    .privilege__logo img {
+        width: 16px;
+     }
+     .payment__row {
+        flex-direction: column;
+    }
+    .payment__btn {
+        padding: calc(7px + (25 - 7) * ((100vw - 320px) / (640 - 320)));
+     }
+    .payment__btn:not(:last-child) {
+        margin: 0;
+        margin-bottom: 10px;
+     }
+     .payment__btn img {
+         width: 18px;
+         height: 10px;
+     }
+}
+
+
