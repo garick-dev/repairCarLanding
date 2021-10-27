@@ -1,0 +1,59 @@
+.title{
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320))) ; 
+    line-height: calc(24px + (48 - 24) * ((100vw - 320px) / (1920 - 320))) ;
+}
+
+
+.subtitle {
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    line-height: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
+    color: #DE3F3F;
+}
+
+.repair__block {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 120px;
+}
+.title_repair {
+    padding-bottom: 30px;
+}
+.subtitle_repair {  
+    color: #000000;
+    padding-bottom: 120px;
+}
+.repair__block_active {
+    max-width: 980px;
+    background-color: #DE3F3F;
+    border-radius: 22px;
+    color: #ffffff;
+    padding: 30px 80px 110px 80px;
+}
+
+
+@media (max-width: 1200px ) {
+    .repair {
+        padding: 0 10px;
+    }
+    .repair__block {      
+        padding-top: calc(20px + (120 - 20) * ((100vw - 320px) / (1200 - 320))); 
+    }
+    .title_repair {
+        padding-bottom: calc(5px + (30 - 5) * ((100vw - 320px) / (1200 - 320))); 
+    }
+    .subtitle_repair {  
+        padding-bottom: calc(20px + (120 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .repair__block_active {
+        max-width: 980px;
+        background-color: #DE3F3F;
+        border-radius: 22px;
+        color: #ffffff;
+        padding: calc(5px + (30 - 5) * ((100vw - 320px) / (1200 - 320))) calc(20px + (80 - 20) * ((100vw - 320px) / (1200 - 320))) calc(30px + (110 - 30) * ((100vw - 320px) / (1200 - 320))) calc(20px + (80 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+}

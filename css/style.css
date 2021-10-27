@@ -72,7 +72,7 @@
   font-weight: 700;
   color: #ffffff;
   font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
-  line-height:  calc(18px + (32- 18) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
   background-color: #262629;
 }
 
