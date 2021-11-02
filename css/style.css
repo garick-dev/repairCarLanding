@@ -36,6 +36,8 @@
   padding: 0 20px;
   color: #000000;
   text-align: center;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 
 
@@ -113,7 +115,6 @@
 }
 
 .footer__address {
-  /* padding-top: 65px; */
   max-width: 340px; 
 }
 
@@ -125,7 +126,6 @@
   }
   .footer__address {
     padding-top: calc(15px + (65 - 15) * ((100vw - 640px) / (1920 - 640)));
-    /* max-width: 340px;  */
   }
   .footer__year {
     padding-right: calc(5px + (45 - 5) * ((100vw - 640px) / (1920 - 640)));
@@ -137,20 +137,20 @@
 
 @media (max-width: 1920px) {
   .header__logo {
-    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
   } 
   .menu__link {
-    font-size: calc(14px + ( 20- 14) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(12px + (20- 12) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(15px + ( 27 - 15 ) * ((100vw - 320px) / (1920 - 320)));
   }
   
 .header__link {
-    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
 }
 .footer {
-    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
 }
 .footer__political {

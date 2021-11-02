@@ -16,17 +16,15 @@
     <title>Ремонт</title>
 </head>
 <body>
-
-
 <header class="header">
     <div class="header__inner">
         <div class="header__logo">РЕМОНТ КОРОБОК ПЕРЕДАЧ</div>
         <div class="header__menu">
             <ul class="menu">
-                <li class="menu__list"><a class="menu__link" href="#">О нас</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Стоимость услуг</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Контакты</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Обратный звонок</a></li>
+                <li class="menu__list"><a class="menu__link" href="#about">О нас</a></li>
+                <li class="menu__list"><a class="menu__link" href="#price">Стоимость услуг</a></li>
+                <li class="menu__list"><a class="menu__link" href="#find">Контакты</a></li>
+                <li class="menu__list"><a class="menu__link popup__open" data-popup="callback">Обратный звонок</a></li>
             </ul>
         </div>
         <div class="header__phone">
@@ -41,7 +39,7 @@
             <div class="hero__block">
                 <div class="hero__top">
                     <h1 class="subtitle subtitle_hero">РЕМОНТ АКПП, ВАРИАТОРОВ, МЕХАНИКИ ОТ 2000 р</h1>
-                    <h2 class="title title_hero">DSG / S-TRONIC / POWERSHIFT / СВАП / АКПП</h2>
+                    <h2 class="title title_hero"> <a class="popup__open" data-popup="DSG">DSG</a> / <a class="popup__open" data-popup="DSG">S-TRONIC</a> / <a class="popup__open" data-popup="POWERSHIFT">POWERSHIFT</a> / <a class="popup__open" data-popup="SWAP">СВАП</a> / <a class="popup__open" data-popup="AKPP">АКПП</a></h2>
                 </div>
                 <div class="hero__bottom">
                     <img src="./img/Vector.png" alt="" class="hero__img">
@@ -52,46 +50,46 @@
             </div>
         </div>
     </div>
-    <article class="about">
+    <article class="about" id="about">
         <div class="about__inner  container">
             <h2 class="title title_about">О НАШЕМ СЕРВИСЕ</h2>
             <h3 class="subtitle subtitle_about">Как мы работаем? <span class="span-highlight">6 простых шагов:</span>
             </h3>
             <div class="about__row">
-                <div class="about__item  about_order-1">
+                <div class="about__item">
                     <h2 class="about__number">1</h2>
                     <h2 class="about__text">На Вашей машине
                         подозрительно
                         работает трансмиссия</h2>
                 </div>
-                <div class="about__item about_order-2">
+                <div class="about__item">
                     <h2 class="about__number ">2</h2>
                     <h2 class="about__text">Вы звоните нам
                         или оставляете
                         заявку на сайте</h2>
                 </div>
-                <div class="about__item about_order-3">
+                <div class="about__item">
                     <h2 class="about__number ">3</h2>
                     <h2 class="about__text">Вызываете наш бесплатный эвакуатор или приезжаете своим ходом</h2>
                 </div>
-                <div class="about__item about_order-6">
+                <div class="about__item">
                     <h2 class="about__number">6</h2>
                     <h2 class="about__text">Приезжаете
                         за автомобилем
                         и пользуетесь гарантией</h2>
                 </div>
-                <div class="about__item about_order-5">
+                <div class="about__item">
                     <h2 class="about__number ">5</h2>
                     <h2 class="about__text">Согласовываете перечень работ,
                         сроки и стоимость</h2>
                 </div>
-                <div class="about__item about_order-4">
+                <div class="about__item">
                     <h2 class="about__number ">4</h2>
                     <h2 class="about__text">Общаетесь с мастером
                         в процессе дефектовки и диагностики</h2>
                 </div>
             </div>
-    
+
         </div>
     </article>
     <article class="application">
@@ -99,7 +97,7 @@
             <h2 class="title title_application">
                 ОСТАВЬ ЗАЯВКУ И ПОЛУЧИ СКИДКУ
             </h2>
-            <form class="application__form">
+            <form class="application__form" data-form="application">
                 <input class="input application__name" type="text" placeholder="Имя">
                 <input class="input application__phone" type="text" placeholder="Ваш телефон">
                 <button class="btn application__btn" type="submit">Получить скидку</button>
@@ -179,7 +177,7 @@
             </div>
         </div>
     </article>
-    <article class="price">
+    <article class="price" id="price">
         <div class="price__inner container">
             <h2 class="title title_price">ЦЕНЫ НА РЕМОНТ <span class="span-highlight">DSG</span> И <span
                     class="span-highlight">POWERSHIFT</span></h2>
@@ -324,16 +322,24 @@
                    <h2 class="title title_reviews">
                 ОТЗЫВЫ КЛИЕНТОВ
             </h2>
-            <div class="reviews__content">
+            <div itemtype="http://schema.org/Product" itemscope class="reviews__content">
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                     <div class="glide__slides">
                         <div class="glide__container">
-                        <div class="glide__item">
-                            <p class="glide__title">Андрей</p>
-                            <p class="glide__text">Хорошее место по ремонту Ауди. Стала дергаться коробка при снижении
+                        <div itemprop="review" itemtype="http://schema.org/Review" itemscope class="glide__item">
+                            <p itemprop="author" itemtype="http://schema.org/Person" itemscope class="glide__title">
+                                Андрей
+                                <meta itemprop="name" content="Кирилл" />
+                            </p>
+                            <p itemprop="reviewBody" class="glide__text">Хорошее место по ремонту Ауди. Стала дергаться коробка при снижении
                                 скорости. Везде приговаривали замену сцепления, а в итоге грамотная диагностика и умелые руки
                                 выявили и исправили поломкув мехатронике. Записывался заранее т.к. сам из Петрозаводска. </p>
+                        </div>
+                        <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                            <meta itemprop="ratingValue" content="5" />
+                            <meta itemprop="bestRating" content="5" />
+                            <meta itemprop="worstRating" content="1" />
                         </div>
                         <div class="glide__item">
                             <p class="glide__title">Роман</p>
@@ -401,10 +407,10 @@
     </div>
 
     </section>
-    <article class="find">
+    <article class="find" id="find">
         <div class="find__inner container">
             <h2 class="title title_find">КАК НАС НАЙТИ</h2>
-            <form class="find__form">
+            <form class="find__form" data-form="find">
                 <input class="input find__name" type="text" name="" placeholder="Имя">
                 <input class="input find__phone" type="text" name="" placeholder="Ваш телефон">
                 <button class="btn find__btn" type="submit">Вперед</button>
@@ -423,11 +429,12 @@
                 tabindex="0"
         ></iframe>
     </article>
+    <div class="modal"></div>
 </section>
-<footer class="footer">
+<footer itemscope itemtype="http://schema.org/Organization" class="footer">
     <div class="footer__inner">
         <div class="footer__left-side">
-            <p class="footer__logo">
+            <p itemprop="name" class="footer__logo">
                 РЕМОНТ КОРОБОК ПЕРЕДАЧ
             </p>
             <div class="footer__info">
@@ -435,12 +442,13 @@
                 <a class="footer__political" href="#">Политика конфиденциальности</a>
             </div>
         </div>
-        <div class="footer__right-side">
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="footer__right-side">
             <div class="footer__phone">
-                <a class="footer__link" href="#">+7 812 509 23 33</a>
+                <a itemprop="telephone" class="footer__link" href="#">+7 812 509 23 33</a>
             </div>
-            <p class="footer__address">ул. Хрустальная, 31 литер о
-                Санкт-Петербург</p>
+            <p class="footer__address">
+                <span itemprop="streetAddress">ул. Хрустальная, 31 литер о</span>
+                <span itemprop="addressLocality">Санкт-Петербург</span></p>
         </div>
     </div>
 </footer>
